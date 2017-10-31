@@ -1,0 +1,50 @@
+.b-match{
+    label{
+        font-size: 2.9rem;
+        font-weight: normal; 
+        display: block;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    input{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        padding: 20px;
+        font-size: 5.3rem;
+        text-align: center;
+        margin: 0 15px;
+    }
+
+    .team{
+        &:after{
+            content: "";
+            background-color: $color-primary;
+            width: 20px;
+            height: 4px;
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            margin-top: -2px;
+        }
+        text-align: right;
+        label{
+            margin-left: 10px;
+        }
+        & + .team{
+            text-align: left;
+            &:after{
+                content: none;
+            }
+            label{
+                margin-right: 10px;
+                margin-left: 0px;
+            }
+        }
+    }
+    & + .b-match{
+        margin-top: 40px;
+    }
+}

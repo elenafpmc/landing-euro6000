@@ -1,33 +1,46 @@
-.bet-page{
+
+.bet-page {
     font-family: $f-ubuntu;
     text-align: center;
     color: $color-white;
-    &__top{
+    background-image: url('../img/bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+
+    &__top {
         margin-bottom: 45px;
-        .title{
+        .title {
             display: inline-block;
             font-size: 4.3rem;
             font-weight: bold;
         }
-        p{
+        p {
             font-size: 2.5rem;
             font-weight: normal;
         }
     }
 
-    &__main-content{
-        .title{
+
+    &__main-content {
+        padding: 50px 65px 80px;
+        .title {
             display: inline-block;
             font-size: 4.9rem;
             line-height: 4.2rem;
             font-weight: bold;
         }
         
-        .subtitle{
+        .subtitle {
             display: inline-block;
             font-size: 3.8rem;
             line-height: 5.7rem;
             font-weight: 500;
         }
+        .bg-grey {
+            padding: 60px 55px 75px;
+        }
     }
+
+
 }
