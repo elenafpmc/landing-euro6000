@@ -1,0 +1,33 @@
+.bet-page{
+    font-family: $f-ubuntu;
+    text-align: center;
+    color: $color-white;
+    &__top{
+        margin-bottom: 45px;
+        .title{
+            display: inline-block;
+            font-size: 4.3rem;
+            font-weight: bold;
+        }
+        p{
+            font-size: 2.5rem;
+            font-weight: normal;
+        }
+    }
+
+    &__main-content{
+        .title{
+            display: inline-block;
+            font-size: 4.9rem;
+            line-height: 4.2rem;
+            font-weight: bold;
+        }
+        
+        .subtitle{
+            display: inline-block;
+            font-size: 3.8rem;
+            line-height: 5.7rem;
+            font-weight: 500;
+        }
+    }
+}
