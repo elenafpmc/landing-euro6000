@@ -87,7 +87,7 @@
                                 <h3>Selecciona tu equipo y entra en el sorteo de <span class="color-primary">entrada doble</span> y <span class="color-primary">*Player Escort</span>.</h3>
                                 <p class="small-text">*Disponible solo para fases 5 y 6.</p>
 
-                                <div class="row justify-content-center">
+                                <div class="row justify-content-center selectpicker-cnt">
                                   <div class="col-sm-5">
                                         <label >Elige tu equipo:</label>
                                   </div>
@@ -100,12 +100,18 @@
                                     </select>
                                   </div>
                                 </div>
-                                <div class="text-ceter">
-                                    <div class="checkbox">
-                                      <input type="checkbox" required name="terms" id="terms">
-                                      <label for="terms"></label>
-                                    </div>
+                                <div class="text-ceter form-group checkbox">
+                                      <input type="checkbox" checked required name="terms" id="terms">
+                                      <label for="terms">He leído y acepto las <a href="">bases legales</a></label>
+                                </div>
+                                <input type="submit" class="btn-primary submit" value="ENVIAR Y PARTICIPAR">
 
+                                <div class="row justify-content-center">
+                                  <div class="col-sm-8">
+                                    <p class="advice">
+                                      *Entradas por cortesía de Mastercard®, Patrocinador Oficial de la UEFA Champions League. Válido hasta 01/05/18.
+                                    </p>
+                                  </div>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +119,23 @@
                 </div>
             </div>
         </div>
-	</main>
+        <div class="join">
+          <h2 class="h2--orange">
+            Descubre la lista de ganadores
+          </h2>
+          <p>
+            ¿Has participado en porras anteriores? <br>
+            Introduce tu email y comprueba tus apuestas.
+          </p>
+
+            <form class="form-inline d-flex justify-content-center">
+              <input type="email" class="form-control" id="email" >
+              <button type="submit" class="btn-primary join__btn">Consultar</button>
+          </form>
+        </div>
+
+
+  </main>
 
   @@include("blocks/footer.html")
   @@include("core/plugins.js.html")

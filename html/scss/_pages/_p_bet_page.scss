@@ -24,6 +24,7 @@
 
     &__main-content {
         padding: 50px 65px 80px;
+        margin-bottom: 70px;
         .title {
             display: inline-block;
             font-size: 4.9rem;
@@ -60,12 +61,83 @@
         text-align: left;
     }
 
+  .selectpicker-cnt{
+    margin-bottom: 75px;
+  }
+
   label{
     font-weight: bold;
     font-size: 3rem;
     line-height: 5.7rem;
   }
 
+  .checkbox{
+    input{
+      width: 17px;
+      height: 17px;
+      border: none;
+      background-color: $color-white;
+      display: inline-block;
+      color: $color-secondary;
+      -webkit-appearance: checkbox;
+      -moz-appearance: initial;
+    }
+
+    label{
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 5.7rem;
+      a{
+        color: $color-secondary;
+      }
+    }
+
+  }
+  .submit{
+    font-size: 2.9rem;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: 26px;
+  }
+
+  .advice{
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+
+  .h2--orange{
+    color: $color-primary;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+  }
+  .join {
+    p{
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 35px;
+    }
+    input[type=email]{
+      border: none;
+      font-size: 2.9rem;
+      line-height: 3.5rem;
+      padding: 20px 23px;
+      color: $color-black-text;
+      display: inline-block;
+      margin-right: 40px;
+      &:focus{
+        outline: none;
+      }
+    }
+    &__btn{
+      font-size: 3.9rem;
+      display: inline-block;
+      line-height: 3.5rem;
+      font-weight: bold;
+    }
+  }
 
 }
 
@@ -130,4 +202,18 @@
           display: inline-block;
       }
     }
+}
+
+.btn-primary{
+  color: $color-white;
+  background-color: $color-btn;
+  padding: 23px 30px;
+  border: none;
+  border-radius: none;
+  &:hover{
+
+  }
+  &:focus{
+    outline: none;
+  }
 }
