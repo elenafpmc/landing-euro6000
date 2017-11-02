@@ -17,7 +17,7 @@
         }
         p {
             font-size: 2.5rem;
-            font-weight: normal;
+            font-weight: 500;
         }
     }
 
@@ -30,7 +30,7 @@
             line-height: 4.2rem;
             font-weight: bold;
         }
-        
+
         .subtitle {
             display: inline-block;
             font-size: 3.8rem;
@@ -60,52 +60,74 @@
         text-align: left;
     }
 
-    .bootstrap-select{
-        .dropdown-menu ul{
-            display: inline-block;
-        }
-        li a{
-            font-weight: 100;
-            font-size: 2.4rem;
-            line-height: 5.7rem;
-        }
-    }
+  label{
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 5.7rem;
+  }
+
 
 }
 
+
+
 .bootstrap-select{
+    position: relative;
     .dropdown-toggle::after{
         position: absolute;
         top: 0;
         right: 15px;
         display: inline-block;
-        width: 0;
-        height: 0;
+        width: 18px;
+        height: 100%;
         margin-left: 0;
         vertical-align: 0;
-        content: "\E004";
+        background-image: url('../../svg/icons/arrow_down.svg');
+        font-family: "Iconfont";
+        background-size: 18px auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        content: "";
         border: none;
-        
-    }
-    & > .dropdown-menu{
 
     }
-    button{
+    > .dropdown-menu{
+      border-radius: 10px;
+    }
+
+
+    >.dropdown-toggle{
         background-color: $color-white;
         color: $color-black-text;
         font-size: 2.5rem;
         line-height: 2rem;
         font-weight: 100;
-        padding: 10px 22px 15px;
+        padding: 13px 22px 15px;
         overflow: hidden;
         border: none;
         border-radius: 10px;
         max-height: 50px;
+        cursor: pointer;
+
+        &:focus , &:active{
+          outline: none !important;
+        }
     }
-    li a{
-        color: $color-black-text;
-        font-weight: 100;
-        font-size: 2.4rem;
-        line-height: 5.7rem;
+    .dropdown-menu.inner{
+      display: block;
+    }
+    li {
+      & + li {
+        border-top: 1px solid #a9a9a9;
+      }
+      a{
+          color: $color-black-text;
+          font-weight: 100;
+          font-size: 2.4rem;
+          line-height: 5.7rem;
+          padding: 0px 22px;
+          width: 100%;
+          display: inline-block;
+      }
     }
 }

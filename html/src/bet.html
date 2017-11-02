@@ -86,12 +86,27 @@
                             <div class="col-sm-10">
                                 <h3>Selecciona tu equipo y entra en el sorteo de <span class="color-primary">entrada doble</span> y <span class="color-primary">*Player Escort</span>.</h3>
                                 <p class="small-text">*Disponible solo para fases 5 y 6.</p>
-                                <label >Elige tu equipo:</label>
-                                <select class="selectpicker" title="seleccionar..." data-width="">
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                </select>
+
+                                <div class="row justify-content-center">
+                                  <div class="col-sm-5">
+                                        <label >Elige tu equipo:</label>
+                                  </div>
+                                  <div class="col-sm-8">
+                                    <select required class="selectpicker form-control" data-dropup-auto="false"  data-size="false" title="seleccionar...">
+                                      <option>Liverpool FC - Sevilla FC</option>
+                                      <option>Real Madrid FC - Apoel FC</option>
+                                      <option>AS Roma - Club Atlético de Madrid</option>
+                                      <option>FC Barcelona - Juventus Football Club</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="text-ceter">
+                                    <div class="checkbox">
+                                      <input type="checkbox" required name="terms" id="terms">
+                                      <label for="terms"></label>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </form>
