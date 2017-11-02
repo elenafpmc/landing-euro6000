@@ -225,17 +225,17 @@ gulp.task('mail', function() {
 	var mailService = util.env.dest;
 
 	if(mailService == 'gmail'){
-		recipient = 'adnkpmg@gmail.es';
+		recipient = 'flyingpigs@gmail.es';
 	}else if(mailService == 'outlook'){
-		recipient = 'adnkpmg@outlook.es';
+		recipient = 'flyingpigs@outlook.es';
 	}else if(mailService == 'yahoo'){
-		recipient = 'adnkpmg@yahoo.com';
+		recipient = 'flyingpigs@yahoo.com';
 	}
 
 	  gulp.src(mailTemplate) // Modify this to select the HTML file(s)
 	  .pipe(sendmail({
 	    key: 'key-1454f0442daac8f50836afcbaa86c9e0', // Enter your Mailgun API key here
-	    sender: 'pruebas@adniberia.com',
+	    sender: 'pruebas@flyingpigs.com',
 	    recipient: recipient,
 	    subject: 'This is a test email'
 	  })).on('error', notify.onError(function (error) {
@@ -255,7 +255,7 @@ gulp.task('sftp', function () {
 			port: '2220',
 			user: 'desarrollo',
 			pass: '4k3n4t0n4mh0th3p',
-			remotePath: '/var/www/vhosts/desarrolloadn.net/test/new',
+			remotePath: '/var/www/vhosts/flyingpigs.net/test/new',
 		})).on('error', notify.onError(function (error) {
 	   return 'Error subiendo FTP.\n' + error;
 	}))
@@ -334,7 +334,7 @@ gulp.task('iconfont', function(){
     .pipe(iconfont({
       fontName: 'Iconfont', // required
       prependUnicode: true, // recommended option
-      formats: ['ttf', 'eot', 'woff'], // default, 'woff2' and 'svg' are available
+      formats: ['ttf', 'eot', 'woff','woff2'], // default, 'woff2' and 'svg' are available
       timestamp: runTimestamp, // recommended to get consistent builds when watching files
     }))
       .on('glyphs', function(glyphs, options) {
@@ -383,7 +383,7 @@ gulp.task('build-html', function() {
 //Urls separadas cuando trabajamos con un CMS
 gulp.task('critical-home', function() {
     return critical.generate({
-        src: 'http://www.adniberia.com',
+        src: 'http://www.flyingpigs.com',
         dest: config.css + '/critical/critical-home.css',
         width: 1200,
         height: 900,
@@ -394,7 +394,7 @@ gulp.task('critical-home', function() {
 
 gulp.task('critical-contact', function() {
     return critical.generate({
-        src: 'http://www.adniberia.com/contacto/',
+        src: 'http://www.flyingpigs.com/contacto/',
         dest: config.css + '/critical/critical-contacto.css',
         width: 1200,
         height: 900,

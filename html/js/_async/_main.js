@@ -24,63 +24,65 @@ function initAsync(){
 
 $(window).load(function(){
 
+	$('.selectpicker').selectpicker();
+	  
 	//Ejecutamos Masonry
-	$('.js-masonry').masonry({
-	  columnWidth: 1,
-	});	
+	// $('.js-masonry').masonry({
+	//   columnWidth: 1,
+	// });	
 	
 	
 	//Ejecutamos Sliders	
-	$('.js-slick').slick({
-		dots: true,
-		arrows: false
-	});
+	// $('.js-slick').slick({
+	// 	dots: true,
+	// 	arrows: false
+	// });
 	
 	
 	//Ejecutamos Sliders con autoPlay
-	$('.js-slick-autoplay').each(function(){
-		$(this).slick({
-			dots: true,
-			arrows: false,
-			autoplay: true,
-			autoplaySpeed: $(this).attr('data-play-speed') || 10000 //10s de autoplay o por data-play-speed
-		});
-	});
+	// $('.js-slick-autoplay').each(function(){
+	// 	$(this).slick({
+	// 		dots: true,
+	// 		arrows: false,
+	// 		autoplay: true,
+	// 		autoplaySpeed: $(this).attr('data-play-speed') || 10000 //10s de autoplay o por data-play-speed
+	// 	});
+	// });
 	
 	
 	//Slider sin dots con arrows
-	$('.js-slick-arrows').slick({
-		autoplay: true,
-		autoplaySpeed: 6000,
-		speed: 800,
-		cssEase: 'linear',
-		dots: false,
-		arrows: true,
-		prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 64 64" width="64" class="icon icon--md" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#arrow_left"></use></svg></button>',
-		nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 64 64" width="64" class="icon icon--md" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#arrow_rigth"></use></svg></button>',
+	// $('.js-slick-arrows').slick({
+	// 	autoplay: true,
+	// 	autoplaySpeed: 6000,
+	// 	speed: 800,
+	// 	cssEase: 'linear',
+	// 	dots: false,
+	// 	arrows: true,
+	// 	prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 64 64" width="64" class="icon icon--md" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#arrow_left"></use></svg></button>',
+	// 	nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 64 64" width="64" class="icon icon--md" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../html/svg/symbol/svg/sprite.symbol.svg#arrow_rigth"></use></svg></button>',
 		
-		responsive: [
-		    {
-		      breakpoint: 768,
-		      settings: {
-		        speed: 400,
-		      }
-		    }
-		    // You can unslick at a given breakpoint now by adding:
-		    // settings: "unslick"
-		    // instead of a settings object
-		  ]		
+	// 	responsive: [
+	// 	    {
+	// 	      breakpoint: 768,
+	// 	      settings: {
+	// 	        speed: 400,
+	// 	      }
+	// 	    }
+	// 	    // You can unslick at a given breakpoint now by adding:
+	// 	    // settings: "unslick"
+	// 	    // instead of a settings object
+	// 	  ]		
 		
-	});
+	// });
 	
-	$('.js-toggle-text').each(function(){
-		$(this).on('click', function(){
-			console.log('a');
-			var _newText = $(this).attr('data-text');
-			$(this).attr('data-text', _newText);
-			$(this).text(_newText);
-		});	
-	});	
+	// $('.js-toggle-text').each(function(){
+	// 	$(this).on('click', function(){
+	// 		console.log('a');
+	// 		var _newText = $(this).attr('data-text');
+	// 		$(this).attr('data-text', _newText);
+	// 		$(this).text(_newText);
+	// 	});	
+	// });	
 	
 })	
 
@@ -92,7 +94,7 @@ svg4everybody();
 	Lógica de scripts
 -------------------------------------------------- */
 $(function() {
-	
+	  
 	
 	/*	--------------------------------------------------
 		Recalculamos alturas cuando se ejecute el lazysizes
@@ -293,7 +295,7 @@ $(function() {
 	maxHeight = $(window).height() - $('.off-canvas__head').outerHeight() - $('.bottom-off-canvas').outerHeight() - 20; 
 
 	$('.js-height-menu').css('height', maxHeight); 
-	console.log($('.bottom-off-canvas').outerHeight()); 
+	// console.log($('.bottom-off-canvas').outerHeight()); 
 	
 
 	

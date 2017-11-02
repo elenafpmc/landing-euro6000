@@ -633,7 +633,7 @@ grunt_config.json</pre>
 <li><strong>Gruntfile_pro.js</strong> - Configuración de Grunt para producción, <strong>no modificar</strong></li>
 <li><strong>robots.txt</strong> - Archivo para evitar que google indexe el desarrollo</li>
 <li><strong>package.json</strong> - Archivo de configuración de grunt, <strong>no modificar</strong></li>
-<li><strong>git.php</strong> - Archivo para activar el autodeploy en desarrolloadn.net, <strong>no modificar</strong></li>
+<li><strong>git.php</strong> - Archivo para activar el autodeploy en flyingpigs.net, <strong>no modificar</strong></li>
 <li><strong>index.html</strong> - Indice del proyecto</li>
 <li><strong>secrets.json</strong> - Configuración de gruntfile, <strong>no modificar</strong></li>
 <li><strong>grunt_config.json</strong> - Configuración de gruntfile, modificar para cada proyecto</li>
@@ -682,7 +682,7 @@ styles.min.css</pre>
 <p class="styleguide">Por motivos de optimimización todo el JS se cargará de manera asíncrona excepto aquel que sea necesario para formar la página. Por este motivo hay que ser consciente de que la página se vea bien tanto con JS como sin JS cargado.</p><p class="styleguide">Trabajaremos con archivos de “código fuente” que generarán 2 archivos compilados para su uso final en la maqueta (async.js y critical.js).</p><p class="styleguide">Estos archivos se generan automáticamente cargando todos los js presentes en sus correspondientes carpetas, para evitar que un JS se añada bastará con cambiar su extensión a .js_, en todo proyecto habrá que hacerlo para evitar cargar JS que no se necesite.</p><div class="codeBlock">
   <div class="highlight">
     <pre>async/
-    adn/
+    flyingpigs/
         pages/
         plugins/
         helpers.js
@@ -698,11 +698,11 @@ critical/
 inline/</pre>
   </div>
 </div><ul class="styleguide"><li><strong>async/</strong> - Scripts principales de la página, escritos en jQuery</li>
-<li><strong>async/adn/</strong> - Scripts creados por ADN</li>
-<li><strong>async/adn/pages/</strong> - Scripts únicos a ciertas páginas</li>
-<li><strong>async/adn/plugins/</strong> - Plugins creados por ADN</li>
-<li><strong>async/adn/helpers.js</strong> - Scripts comunes a todos los proyectos, <strong>no modificar</strong></li>
-<li><strong>async/adn/main.js</strong> -  Scripts comunes a todas las páginas</li>
+<li><strong>async/flyingpigs/</strong> - Scripts creados por flyingpigs</li>
+<li><strong>async/flyingpigs/pages/</strong> - Scripts únicos a ciertas páginas</li>
+<li><strong>async/flyingpigs/plugins/</strong> - Plugins creados por flyingpigs</li>
+<li><strong>async/flyingpigs/helpers.js</strong> - Scripts comunes a todos los proyectos, <strong>no modificar</strong></li>
+<li><strong>async/flyingpigs/main.js</strong> -  Scripts comunes a todas las páginas</li>
 <li><strong>bootstrap/</strong> - JS original de bootstrap</li>
 <li><strong>bootstrap-plugins/</strong> - Plugins de terceros basados en bootstrap</li>
 <li><strong>vendor/</strong> -  Plugins de terceros no basados en bootstrap</li>

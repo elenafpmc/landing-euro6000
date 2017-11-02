@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Pruebas con Gulp",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap-select": "^1.12.4"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "browser-sync": "^2.11.1",
