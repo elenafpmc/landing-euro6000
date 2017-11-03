@@ -1,3 +1,15 @@
 .header{
     margin: 50px 50px 75px;
+
+     @include media-breakpoint-down(sm) {
+     	margin: 15px 15px 45px;
+
+     	.logo-mastercard {
+     		max-width: 170px; 
+     	}
+
+     	.logo-euro {
+     		max-width: 60px;
+     	}
+     }
 }

@@ -1,5 +1,5 @@
 /*	----------------------------------------------------------------------------------------------------
-	 JS ADN global para todo el proyecto de carga asíncrona
+	 JS global para todo el proyecto de carga asíncrona
 ------------------------------------------------------------------------------------------------------ */
 
 /*	--------------------------------------------------
@@ -244,49 +244,6 @@ $(function() {
 	
 
 
-	/*	--------------------------------------------------
-		Muestro modal de prueba kpmg impulsa
-		tras 5 segundos
-	-------------------------------------------------- */
-
-	if ($('#modal-test-impulsa').length>0 ) {
-		setTimeout(function(){ 
-			$('#modal-test-impulsa').modal(); 
-		}, 3000);
-
-	}
-
-	/*	--------------------------------------------------
-		Muestro modal de suscripción
-		por defecto
-	-------------------------------------------------- */
-
-
-	if ($('#modal-suscription').length>0 ) {
-
-		$('#modal-suscription').on('show.modal', function(){
-		});
-		$('#modal-suscription').on('hide.modal', function(){
-			
-		});
-
-		$('#modal-suscription').modal('show'); 
-		$('#modal-suscription').on('shown.modal', function(){
-			
-		});
-
-	}
-
-	/*	--------------------------------------------------
-		Muestro modal de preparando documentos
-		por defecto
-	-------------------------------------------------- */
-
-	if ($('#modal-docs').length>0 ) {
-
-		$('#modal-docs').modal();
-
-	}
 
 	/*	--------------------------------------------------
 		Calculo altura del menu mobile

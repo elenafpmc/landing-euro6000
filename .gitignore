@@ -1,0 +1,35 @@
+# OS generated files #
+######################
+*/.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Zips #
+######################
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Otros #
+######################
+secrets.json
+docs/
+
+
+/readme.html
+/license.txt
+
+node_modules
+node_modules/grunt-zetzer/node_modules/zetzer/node_modules/.bin/dottojs
+node_modules/grunt-zetzer/node_modules/zetzer/node_modules/.bin/marked

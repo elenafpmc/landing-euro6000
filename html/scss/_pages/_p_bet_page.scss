@@ -14,10 +14,21 @@
             display: inline-block;
             font-size: 4.3rem;
             font-weight: bold;
+
+             @include media-breakpoint-down(sm) {
+              font-size: 3rem; 
+              line-height: 3.8rem;
+              margin-bottom: 15px; 
+            }
         }
-        p {
+        .lead {
             font-size: 2.5rem;
             font-weight: 500;
+            text-align: left;
+
+             @include media-breakpoint-down(sm) {
+              font-size: 1.9rem;
+             }
         }
     }
 
@@ -25,11 +36,27 @@
     &__main-content {
         padding: 50px 65px 80px;
         margin-bottom: 70px;
+
+        @include media-breakpoint-down(md) {
+          padding: 35px;
+          margin-bottom: 20px; 
+        }
+
+         @include media-breakpoint-down(sm) {
+          border: none; 
+         }
         .title {
             display: inline-block;
             font-size: 4.9rem;
-            line-height: 4.2rem;
+            line-height: 5.4rem;
             font-weight: bold;
+
+            @include media-breakpoint-down(sm) {
+              font-size: 3.9rem;
+              line-height: 4.9rem;
+            }
+
+
         }
 
         .subtitle {
@@ -37,38 +64,94 @@
             font-size: 3.8rem;
             line-height: 5.7rem;
             font-weight: 500;
+            margin-bottom: 30px; 
+
+            @include media-breakpoint-down(sm) {
+              font-size: 2.8rem;
+              line-height: 3.5rem;
+            }
         }
         .bg-grey {
             padding: 60px 55px 75px;
+
+            @include media-breakpoint-down(md) { 
+              padding: 30px;
+            }
+
+            @include media-breakpoint-down(sm) { 
+              padding: 15px;
+            }
         }
     }
 
-    h3{
+    .h3{
         font-size: 3.4rem;
-        line-height: 5.7rem;
+        line-height: 4.7rem;
         font-weight: bold;
-        color: $color-white;
-        margin-bottom: 50px;
         span {
             color: $color-primary;
+        }
+
+        @include media-breakpoint-down(md) { 
+          font-size: 2.4rem; 
+          line-height: 3.7rem; 
+        }
+
+        @include media-breakpoint-down(sm) {
+          font-size: 2.4rem; 
+          line-height: 3.2rem; 
+          margin-bottom: 3rem;
         }
     }
 
     .small-text{
         font-weight: 100;
         font-size: 1.2rem;
-        line-height: 5.7rem;
         text-align: left;
     }
 
   .selectpicker-cnt{
     margin-bottom: 75px;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 15px; 
+    }
+  }
+
+  .last-bets {
+    background-color: $color-black-0;
+    padding: 50px 70px 45px 70px;
+
+    @include media-breakpoint-down(sm) {
+      padding: 20px; 
+    }
+
+    .form-inline {
+      margin-bottom: 50px;
+    }
+
+    .legal-text {
+      font-size: 1.7rem;
+      line-height: 2.2rem;
+      text-align: justify;
+
+      @include media-breakpoint-down(sm) {
+        text-align: left;
+      }
+
+
+    }
   }
 
   label{
     font-weight: bold;
     font-size: 3rem;
     line-height: 5.7rem;
+
+    @include media-breakpoint-down(md) { 
+      font-size: 2rem; 
+      line-height: 2.8rem;
+    }
   }
 
   .checkbox{
@@ -87,6 +170,11 @@
       font-weight: 500;
       font-size: 1.6rem;
       line-height: 5.7rem;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 1.4rem; 
+
+      }
       a{
         color: $color-secondary;
       }
@@ -98,6 +186,12 @@
     line-height: 1;
     font-weight: bold;
     margin-bottom: 26px;
+
+    @include media-breakpoint-down(md) { 
+      font-size: 2.1rem; 
+      width: 100%;
+      padding: 23px 5px
+    }
   }
 
   .advice{
@@ -111,6 +205,12 @@
     line-height: 3.5rem;
     font-weight: bold;
     margin-bottom: 60px;
+
+    @include media-breakpoint-down(md)  {
+      margin-bottom: 0; 
+    }
+
+
   }
   .join {
     p{
@@ -123,12 +223,18 @@
       border: none;
       font-size: 2.9rem;
       line-height: 3.5rem;
-      padding: 20px 23px;
+      padding: 16px 23px;
       color: $color-black-text;
       display: inline-block;
       margin-right: 40px;
       &:focus{
         outline: none;
+      }
+
+      @include media-breakpoint-down(sm) {
+        max-width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 15px; 
       }
     }
     &__btn{
@@ -136,6 +242,11 @@
       display: inline-block;
       line-height: 3.5rem;
       font-weight: bold;
+      padding: 18px 30px;
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
     }
   }
 
@@ -174,7 +285,7 @@
         font-size: 2.5rem;
         line-height: 2rem;
         font-weight: 100;
-        padding: 13px 22px 15px;
+        padding: 17px 22px 9px;
         overflow: hidden;
         border: none;
         border-radius: 10px;

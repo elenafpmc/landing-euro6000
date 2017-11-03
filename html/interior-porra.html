@@ -91,29 +91,27 @@
     <body class="bet">
 		
 	<header class="header">
-    <div class="container-fluid">
-        <div class="align-items-center d-flex justify-content-between">
-            <a href=""><img width='380' class="img-fluid" src="./img/patrocinador.png" alt=""></a>
-            <a href=""><img width="96" src="./img/logo-euro6000.png" alt="logo euro 6000"></a>
-        </div>
+    <div class="align-items-center d-flex justify-content-between">
+        <a href=""><img class="logo-mastercard" width='380' class="" src="./img/patrocinador.png" alt=""></a>
+        <a href=""><img class="logo-euro" width="96" src="./img/logo-euro6000.png" alt="logo euro 6000"></a>
     </div>
 </header>
 
 
 	<main class="wrapper bet-page" role="main">
-        <header class="bet-page__top container-fluid">
+        <section class="bet-page__top">
             <span class="title">
                 Vive con más emoción que nunca las victorias de tu equipo
             </span>
             <div class="container">
                 <div class="row justify-content-md-center">
-                    <div class="col-md-10 d-flex align-items-end text-left">
-                        <p>¡Juega a la porra de la UEFA Champions League, acierta y podrás ganar fantásticos premios! Recuerda pagar con tu tarjeta EURO 6000 Maestro® o Mastercard®.</p>
+                    <div class="col-md-10 d-md-flex align-items-end">
+                        <p class="lead">¡Juega a la porra de la UEFA Champions League, acierta y podrás ganar fantásticos premios! Recuerda pagar con tu tarjeta EURO 6000 Maestro® o Mastercard®.</p>
                         <img src="./img/cards.png" alt="tarjeta euro 600">
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
         <div class="container border--orange bet-page__main-content">
 
             <h1 class="title">UEFA CHAMPIONS LEAGUE</h1>
@@ -122,25 +120,31 @@
                 <div class="bg-grey w-100">
                     <form action="#" method="GET">
                         <div class="b-journey">
-    <h3>Martes, 21 de noviembre de 2017</h3>
+    <h3 class="h3">Martes, 21 de noviembre de 2017</h3>
 
     
         
 
 <div class="row b-match">
-    <div class="col-sm-6 team align-items-center d-flex justify-content-between">
-        <img height="90" required src="./img/escudos/sevillafc.png" alt="">
-        <label for="sevillafc">
-            Sevilla FC
-        </label>
-        <input type="number" required max-length="1" max="9" name="sevillafc" id="sevillafc">
+    <div class="col-lg-6 team">
+        <div class="form-group align-items-center d-flex justify-content-between">
+            <img height="90" required src="./img/escudos/sevillafc.png" alt="">
+            <label for="sevillafc">
+                Sevilla FC
+            </label>
+            <input class="form-control" type="number" required max-length="1" max="9" name="sevillafc" id="sevillafc">
+        </div>
+        
     </div>
-    <div class="col-sm-6 team align-items-center d-flex justify-content-between">
-        <input type="number" max-length="1" max="9" name="liverpoolfc" id="liverpoolfc">
-        <label for="liverpoolfc">
-            Liverpool FC
-        </label>
-        <img height="90" src="./img/escudos/liverpoolfc.png" alt="">
+    <div class="col-lg-6 team ">
+        <div class="form-group align-items-center d-flex justify-content-between  second-row">
+            <input type="number" max-length="1" max="9" name="liverpoolfc" id="liverpoolfc">
+            <label for="liverpoolfc">
+                Liverpool FC
+            </label>
+            <img height="90" src="./img/escudos/liverpoolfc.png" alt="">
+        </div>
+        
     </div>
 
 </div>
@@ -149,19 +153,25 @@
         
 
 <div class="row b-match">
-    <div class="col-sm-6 team align-items-center d-flex justify-content-between">
-        <img height="90" required src="./img/escudos/apoelfc.png" alt="">
-        <label for="apoelfc">
-            Apoel FC
-        </label>
-        <input type="number" required max-length="1" max="9" name="apoelfc" id="apoelfc">
+    <div class="col-lg-6 team">
+        <div class="form-group align-items-center d-flex justify-content-between">
+            <img height="90" required src="./img/escudos/apoelfc.png" alt="">
+            <label for="apoelfc">
+                Apoel FC
+            </label>
+            <input class="form-control" type="number" required max-length="1" max="9" name="apoelfc" id="apoelfc">
+        </div>
+        
     </div>
-    <div class="col-sm-6 team align-items-center d-flex justify-content-between">
-        <input type="number" max-length="1" max="9" name="realmadridfc" id="realmadridfc">
-        <label for="realmadridfc">
-            Real Madrid FC
-        </label>
-        <img height="90" src="./img/escudos/realmadridfc.png" alt="">
+    <div class="col-lg-6 team ">
+        <div class="form-group align-items-center d-flex justify-content-between  second-row">
+            <input type="number" max-length="1" max="9" name="realmadridfc" id="realmadridfc">
+            <label for="realmadridfc">
+                Real Madrid FC
+            </label>
+            <img height="90" src="./img/escudos/realmadridfc.png" alt="">
+        </div>
+        
     </div>
 
 </div>
@@ -170,25 +180,31 @@
     
     
 </div><div class="b-journey">
-    <h3>Miércoles, 22 de noviembre de 2017</h3>
+    <h3 class="h3">Miércoles, 22 de noviembre de 2017</h3>
 
     
         
 
 <div class="row b-match">
-    <div class="col-sm-6 team align-items-center d-flex justify-content-between">
-        <img height="90" required src="./img/escudos/clubatleticodemadrid.png" alt="">
-        <label for="clubatleticodemadrid">
-            Club Atlético de Madrid
-        </label>
-        <input type="number" required max-length="1" max="9" name="clubatleticodemadrid" id="clubatleticodemadrid">
+    <div class="col-lg-6 team">
+        <div class="form-group align-items-center d-flex justify-content-between">
+            <img height="90" required src="./img/escudos/clubatleticodemadrid.png" alt="">
+            <label for="clubatleticodemadrid">
+                Club Atlético de Madrid
+            </label>
+            <input class="form-control" type="number" required max-length="1" max="9" name="clubatleticodemadrid" id="clubatleticodemadrid">
+        </div>
+        
     </div>
-    <div class="col-sm-6 team align-items-center d-flex justify-content-between">
-        <input type="number" max-length="1" max="9" name="asroma" id="asroma">
-        <label for="asroma">
-            AS ROMA
-        </label>
-        <img height="90" src="./img/escudos/asroma.png" alt="">
+    <div class="col-lg-6 team ">
+        <div class="form-group align-items-center d-flex justify-content-between  second-row">
+            <input type="number" max-length="1" max="9" name="asroma" id="asroma">
+            <label for="asroma">
+                AS ROMA
+            </label>
+            <img height="90" src="./img/escudos/asroma.png" alt="">
+        </div>
+        
     </div>
 
 </div>
@@ -197,19 +213,25 @@
         
 
 <div class="row b-match">
-    <div class="col-sm-6 team align-items-center d-flex justify-content-between">
-        <img height="90" required src="./img/escudos/juventusfc.png" alt="">
-        <label for="juventusfc">
-            Juventus Football Club
-        </label>
-        <input type="number" required max-length="1" max="9" name="juventusfc" id="juventusfc">
+    <div class="col-lg-6 team">
+        <div class="form-group align-items-center d-flex justify-content-between">
+            <img height="90" required src="./img/escudos/juventusfc.png" alt="">
+            <label for="juventusfc">
+                Juventus Football Club
+            </label>
+            <input class="form-control" type="number" required max-length="1" max="9" name="juventusfc" id="juventusfc">
+        </div>
+        
     </div>
-    <div class="col-sm-6 team align-items-center d-flex justify-content-between">
-        <input type="number" max-length="1" max="9" name="fcbarcelona" id="fcbarcelona">
-        <label for="fcbarcelona">
-            FC Barcelona
-        </label>
-        <img height="90" src="./img/escudos/fcbarcelona.png" alt="">
+    <div class="col-lg-6 team ">
+        <div class="form-group align-items-center d-flex justify-content-between  second-row">
+            <input type="number" max-length="1" max="9" name="fcbarcelona" id="fcbarcelona">
+            <label for="fcbarcelona">
+                FC Barcelona
+            </label>
+            <img height="90" src="./img/escudos/fcbarcelona.png" alt="">
+        </div>
+        
     </div>
 
 </div>
@@ -219,16 +241,16 @@
     
 </div>
                         <div class="row justify-content-center">
-                            <div class="col-sm-10">
-                                <h3>Selecciona tu equipo y entra en el sorteo de <span class="color-primary">entrada doble</span> y <span class="color-primary">*Player Escort</span>.</h3>
+                            <div class="col-md-12 col-xl-10">
+                                <h3 class="h3">Selecciona tu equipo y entra en el sorteo de <span class="color-primary">entrada doble</span> y <span class="color-primary">*Player Escort</span>.</h3>
                                 <p class="small-text">*Disponible solo para fases 5 y 6.</p>
 
                                 <div class="row justify-content-center selectpicker-cnt">
-                                  <div class="col-sm-5">
+                                  <div class="col-md-5 col-lg-4">
                                         <label >Elige tu equipo:</label>
                                   </div>
-                                  <div class="col-sm-8">
-                                    <select required class="selectpicker form-control" data-dropup-auto="false"  data-size="false" title="seleccionar...">
+                                  <div class="col-md-7 col-lg-8">
+                                    <select required class="selectpicker form-control" data-dropup-auto="false"  data-size="false" title="Seleccionar...">
                                       <option>Liverpool FC - Sevilla FC</option>
                                       <option>Real Madrid FC - Apoel FC</option>
                                       <option>AS Roma - Club Atlético de Madrid</option>
@@ -259,15 +281,23 @@
           <h2 class="h2--orange">
             Descubre la lista de ganadores
           </h2>
-          <p>
-            ¿Has participado en porras anteriores? <br>
-            Introduce tu email y comprueba tus apuestas.
-          </p>
+          <div class="last-bets">
+              <p>
+                ¿Has participado en porras anteriores? <br>
+                Introduce tu email y comprueba tus apuestas.
+              </p>
 
-            <form class="form-inline d-flex justify-content-center">
-              <input type="email" class="form-control" id="email" >
-              <button type="submit" class="btn-primary join__btn">Consultar</button>
-          </form>
+                <form class="form-inline d-md-flex justify-content-center">
+                  <input type="email" class="form-control" id="email" >
+                  <button type="submit" class="btn-primary join__btn">Consultar</button>
+              </form>
+
+              <p class="legal-text">
+                  Entradas por cortesía de Mastercard, Patrocinador Oficial de la UEFA Champions League. Sorteos de acuerdo con las condiciones y calendario descritos en las bases de la promoción. Promoción válida del 15/11/2017 al 01/05/2018 y exclusiva para personas físicas titulares de tarjeta EURO 6000 Maestro y/o Mastercard que sean suscriptores del Newsletter de Privilegios EURO 6000 y que hayan realizado al menos una operación de compra con una de las tarjetas anteriormente indicadas dentro de las fechas especificadas en las bases depositadas ante Notario y disponibles en <a href="#" title="Ir a: Euro 6000 Champions"> www.euro6000.com/champions </a>
+
+              </p>
+          </div>
+          
         </div>
 
 
