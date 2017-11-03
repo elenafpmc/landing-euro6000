@@ -1,0 +1,197 @@
+@@include('./core/html-start.html', {
+    "class": "bet"
+  })
+	@@include('blocks/header.html')
+
+	<main class="wrapper bet-page forecast-page" role="main">
+        <div class="container forecast-page__main-content ">
+
+          <div class="row">
+            <div class="col-md-9 m-auto">
+              <h2 class="subtitle">Estos son todos tus pronósticos de porra con las que has participado hasta ahora</h2>
+            </div>
+          </div>
+          
+
+            
+          <div class="content-forecast">
+              <form action="#" method="GET">
+                  @@loop('./components/journey-forecast.html', [
+                      {   "day": "Tu pronóstico de resultados para FASE DE GRUPOS (Jornada 4)",
+                          "matches": [
+                              {
+                                  "home": {
+                                      "name": "ATLÉTICO",
+                                      "item-name": "atletico",
+                                      "value": 1
+                                  },
+                                  "visitor": {
+                                      "name": "CARABAG",
+                                      "item-name": "carabag",
+                                      "value": 3
+                                  }
+                              },
+                              {
+                                  "home": {
+                                      "name": "OLYMPIACOS",
+                                      "item-name": "olympiacos",
+                                      "value": 0
+                                  },
+                                  "visitor": {
+                                      "name": "BARCELONA",
+                                      "item-name": "barcelona",
+                                      "value": 2
+                                  }
+                              },
+                              {
+                                  "home": {
+                                      "name": "SEVILLA",
+                                      "item-name": "sevilla",
+                                      "value": 1
+                                  },
+                                  "visitor": {
+                                      "name": "MARIBOR",
+                                      "item-name": "maribor",
+                                      "value": 1
+                                  }
+                              },
+                              {
+                                  "home": {
+                                      "name": "TOTTENHAM",
+                                      "item-name": "tottenham",
+                                      "value": 2
+                                  },
+                                  "visitor": {
+                                      "name": "REAL MADRID",
+                                      "item-name": "realmadrid",
+                                      "value": 0
+                                  }
+                              }
+                          ]
+                      },
+                      {   "day": "Tu pronóstico de resultados para FASE DE GRUPOS (Jornada 5)",
+                          "matches": [
+                              {
+                                  "home": {
+                                      "name": "SEVILLA",
+                                      "item-name": "sevilla",
+                                      "value": 1
+                                  },
+                                  "visitor": {
+                                      "name": "LIVERPOOL",
+                                      "item-name": "liverpool",
+                                      "value": 3
+                                  }
+                              },
+                              {
+                                  "home": {
+                                      "name": "APOEL",
+                                      "item-name": "apoel",
+                                      "value": 0
+                                  },
+                                  "visitor": {
+                                      "name": "REAL MADRID",
+                                      "item-name": "realmadrid",
+                                      "value": 2
+                                  }
+                              },
+                              {
+                                  "home": {
+                                      "name": "ATLÉTICO",
+                                      "item-name": "atletico",
+                                      "value": 1
+                                  },
+                                  "visitor": {
+                                      "name": "ROMA",
+                                      "item-name": "maribor",
+                                      "value": 1
+                                  }
+                              },
+                              {
+                                  "home": {
+                                      "name": "JUVENTUS",
+                                      "item-name": "juventus",
+                                      "value": 2
+                                  },
+                                  "visitor": {
+                                      "name": "BARCELONA",
+                                      "item-name": "barcelona",
+                                      "value": 0
+                                  }
+                              }
+                          ]
+                      },
+                      {   "day": "Tu pronóstico de resultados para FASE DE GRUPOS (Jornada 6)",
+                          "matches": [
+                              {
+                                  "home": {
+                                      "name": "CHELSEA",
+                                      "item-name": "chelsea",
+                                      "value": 1
+                                  },
+                                  "visitor": {
+                                      "name": "ATLÉTICO",
+                                      "item-name": "atletico",
+                                      "value": 3
+                                  }
+                              },
+                              {
+                                  "home": {
+                                      "name": "BARCELONA",
+                                      "item-name": "barcelona",
+                                      "value": 0
+                                  },
+                                  "visitor": {
+                                      "name": "SPORTING CP",
+                                      "item-name": "sporting",
+                                      "value": 2
+                                  }
+                              },
+                              {
+                                  "home": {
+                                      "name": "MARIBOR",
+                                      "item-name": "maribor",
+                                      "value": 1
+                                  },
+                                  "visitor": {
+                                      "name": "SEVILLA",
+                                      "item-name": "sevilla",
+                                      "value": 1
+                                  }
+                              },
+                              {
+                                  "home": {
+                                      "name": "REAL MADRID",
+                                      "item-name": "realmadrid",
+                                      "value": 2
+                                  },
+                                  "visitor": {
+                                      "name": "DORTMUND",
+                                      "item-name": "dortmund",
+                                      "value": 0
+                                  }
+                              }
+                          ]
+                      }
+                  ])
+              </form>
+          </div>
+        </div>
+        <div class="join">
+          <div class="last-bets">
+
+              <p class="legal-text">
+                  Entradas por cortesía de Mastercard, Patrocinador Oficial de la UEFA Champions League. Sorteos de acuerdo con las condiciones y calendario descritos en las bases de la promoción. Promoción válida del 15/11/2017 al 01/05/2018 y exclusiva para personas físicas titulares de tarjeta EURO 6000 Maestro y/o Mastercard que sean suscriptores del Newsletter de Privilegios EURO 6000 y que hayan realizado al menos una operación de compra con una de las tarjetas anteriormente indicadas dentro de las fechas especificadas en las bases depositadas ante Notario y disponibles en <a href="#" title="Ir a: Euro 6000 Champions"> www.euro6000.com/champions </a>
+
+              </p>
+          </div>
+          
+        </div>
+
+
+  </main>
+
+  @@include("blocks/footer.html")
+  @@include("core/plugins.js.html")
+
+@@include("core/html-end.html")

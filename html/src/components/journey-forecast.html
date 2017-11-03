@@ -1,0 +1,13 @@
+
+<h3 class="h3">@@day</h3>
+
+
+<div class="b-journey forecast">
+    
+
+    @@for (var i = 0; i < matches.length; i++) {
+        @@include("forecast.html", `+(JSON.stringify(matches[i]))+` )
+    }
+    
+    
+</div>

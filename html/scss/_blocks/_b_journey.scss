@@ -2,7 +2,7 @@
     margin-bottom: 85px;
 
     @include media-breakpoint-down(sm) {
-    	margin-bottom: 0; 
+    	margin-bottom: 20px; 
     }
 
 
@@ -28,11 +28,17 @@
     		}
     	}
 
-    	@include media-breakpoint-down(sm) {
+    	@include media-breakpoint-down(md) {
     		border-bottom: 4px solid $color-primary;
     		padding-bottom: 40px; 
     		margin-bottom: 20px;
 
     	}
     }
+
+    &.forecast {
+    	background-color: $color-grey-bg; 
+    	padding: 30px; 
+    }
 }
+

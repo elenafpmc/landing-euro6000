@@ -13,9 +13,11 @@
         border: none;
         outline: none;
         padding: 10px;
-        font-size: 5.3rem;
+        font-size: 5rem;
         text-align: center;
         margin: 0 15px;
+        color: $color-black-0; 
+        font-weight: 500;
 
         @include media-breakpoint-down(sm) {
             width: 40px; 
@@ -47,7 +49,7 @@
                 top: 100px;
             }
         }
-        text-align: left;
+        text-align: right;
 
         @include media-breakpoint-down(md) {
             text-align: left;
@@ -60,16 +62,17 @@
             }
         }
         label{
+            margin-right: 45px;
             margin-left: 10px;
         }
         & + .team{
-            text-align: right;
+            text-align: left;
             &:after{
                 content: none;
             }
             label{
                 margin-right: 10px;
-                margin-left: 0px;
+                margin-left: 45px;
 
                 @include media-breakpoint-down(md) {
                     margin-left: 10px; 
@@ -81,7 +84,7 @@
     & + .b-match{
         margin-top: 40px;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             margin-top: 0; 
         }
     }
