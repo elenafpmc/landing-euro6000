@@ -39,6 +39,10 @@
     &.forecast {
     	background-color: $color-grey-bg; 
     	padding: 30px; 
+
+    	@include media-breakpoint-down(sm) {
+    		padding: 30px 15px;
+    	}
     }
 }
 
