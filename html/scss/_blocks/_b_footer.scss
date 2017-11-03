@@ -1,0 +1,64 @@
+.join {
+    p{
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 35px;
+    }
+    input[type=email]{
+      border: none;
+      font-size: 2.9rem;
+      line-height: 3.5rem;
+      padding: 16px 23px;
+      color: $color-black-text;
+      display: inline-block;
+      margin-right: 40px;
+      &:focus{
+        outline: none;
+      }
+
+      @include media-breakpoint-down(sm) {
+        max-width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 15px; 
+      }
+    }
+    &__btn{
+      font-size: 3.9rem;
+      display: inline-block;
+      line-height: 3.5rem;
+      font-weight: bold;
+      padding: 18px 30px;
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+
+    .last-bets {
+         background-color: $color-black-0;
+         padding: 50px 70px 45px 70px;
+
+         @include media-breakpoint-down(sm) {
+           padding: 20px; 
+         }
+
+         .form-inline {
+           margin-bottom: 50px;
+         }
+
+         .legal-text {
+           font-size: 1.7rem;
+           line-height: 2.2rem;
+           text-align: justify;
+           font-weight: normal;
+
+           @include media-breakpoint-down(sm) {
+             text-align: left;
+           }
+
+
+         }
+     }
+
+  }

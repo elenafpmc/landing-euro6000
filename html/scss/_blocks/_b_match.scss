@@ -91,3 +91,21 @@
 
     
 }
+
+.forecast {
+    .b-match {
+
+        .team {
+
+            label {
+                @include media-breakpoint-down(sm) {
+                    margin-left: 0; 
+                    margin-right: 20px;
+                }
+            }
+
+        }
+        
+
+    }
+}
