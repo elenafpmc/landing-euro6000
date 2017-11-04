@@ -1,0 +1,85 @@
+
+.winner-page {
+  font-family: $f-ubuntu;
+  text-align: center;
+  color: $color-white;
+  background-image: url('../img/bg.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+
+
+  .h1 {
+    font-weight: 500;
+    font-size: 3.8rem;
+    text-align: center; 
+    margin-bottom: 0; 
+    padding-bottom: 85px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 3rem; 
+      padding-bottom: 50px; 
+    }
+    
+  }
+
+  .h2 {
+    color: $color-primary; 
+    font-size: 3.8rem; 
+    font-weight: 500; 
+    padding-bottom: 50px; 
+    margin-bottom: 0; 
+
+    @include media-breakpoint-down(sm) {
+      font-size: 3rem; 
+      padding-bottom: 40px;
+    }
+  }
+
+  .name-winner {
+    font-size: 3.8rem; 
+    font-weight: 500; 
+    padding-bottom: 50px; 
+    margin-bottom: 0; 
+
+    &:last-of-type {
+      padding-bottom: 0; 
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 3rem; 
+      padding-bottom: 40px; 
+    }
+  }
+
+  .box-winner {
+    padding: 55px; 
+    background: $color-bg-75; 
+    margin-bottom: 56px; 
+
+    &:last-of-type {
+      margin-bottom: 0; 
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 55px 20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 30px 15px;
+
+      &:last-of-type {
+        margin-bottom: 50px;
+      }
+    }
+
+
+
+    
+  }
+    
+
+}
+  
+
+
