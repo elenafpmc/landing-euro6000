@@ -21,9 +21,25 @@
 
             <h1 class="title">UEFA CHAMPIONS LEAGUE</h1>
             <h2 class="subtitle">Fase de grupos - 5ª jornada</h2>
+            <div class="row justify-content-center cnt-error require">
+              <div class="col-md-12">
+                <div class="text-center">
+                  Debes completar todos los resultados de la jornada para poder participar.
+                  <br />
+                  Por favor, revisa los campos marcados en rojo
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center cnt-error bases">
+              <div class="col-md-12">
+                <div class="text-center">
+                  Debes leer y aceptar las Bases de la Promoción para poder participar.
+                </div>
+              </div>
+            </div>
             <div class="row">
                 <div class="bg-grey w-100">
-                    <form action="#" method="GET">
+                    <form action="#" method="GET" id="interior-porra-form">
                         @@loop('./components/journey.html', [
                             {   "day": "Martes, 21 de noviembre de 2017",
                                 "matches": [

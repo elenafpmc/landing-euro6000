@@ -25,6 +25,34 @@ function initAsync(){
 $(window).load(function(){
 
 	$('.selectpicker').selectpicker();
+
+
+	$('#interior-porra-form').validate({
+		invalidHandler: function(event, validator) {
+
+			var bases = false;
+
+			 for (error of validator.errorList ) {
+
+			 	if ( $(error.element).is('select.selectpicker') ) {
+			 		$(error.element).closest('.bootstrap-select').find('.btn').addClass('error');
+			 	}
+			 	if ( validator.errorList.length == 1 && $(error.element).is('#terms') ) {
+			 		$('.cnt-error.bases').show();
+			 		$('.cnt-error.require').hide();
+			 		bases = true;
+			 	} else {
+			 		$('.cnt-error.bases').hide();
+			 		bases = false;
+			 	}
+			 }
+
+			 if ( validator.errorList.length > 0 && bases == false ) {
+			 	$('.cnt-error.require').show();
+			 	$('.cnt-error.bases').hide();
+			 }
+		}
+	});
 	  
 	//Ejecutamos Masonry
 	// $('.js-masonry').masonry({
