@@ -1,4 +1,10 @@
 .b-match{
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    @include media-breakpoint-down(md) {
+        flex-wrap: wrap;
+    }
+
     label{
         font-size: 2.9rem;
         font-weight: normal; 
@@ -29,6 +35,7 @@
     }
 
     .team{
+        box-sizing: border-box;
         &:after{
             content: "";
             background-color: $color-primary;
