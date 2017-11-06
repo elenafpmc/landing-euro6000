@@ -130,33 +130,7 @@
     }
   }
 
-  .checkbox{
-    input{
-      width: 17px;
-      height: 17px;
-      border: none;
-      background-color: $color-white;
-      display: inline-block;
-      color: $color-secondary;
-      -webkit-appearance: checkbox;
-      -moz-appearance: initial;
-    }
-
-    label{
-      font-weight: 500;
-      font-size: 1.6rem;
-      line-height: 5.7rem;
-
-      @include media-breakpoint-down(sm) {
-        font-size: 1.4rem; 
-
-      }
-      a{
-        color: $color-secondary;
-      }
-    }
-
-  }
+  
   .submit{
     font-size: 2.9rem;
     line-height: 1;

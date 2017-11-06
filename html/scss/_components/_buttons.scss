@@ -1,0 +1,20 @@
+//Buttons
+
+.btn-primary {
+	cursor: pointer; 
+}
+
+.btn-secondary {
+	background-color: $color-primary;
+	color: $color-white; 
+	border: none;
+	font-weight: bold; 
+	font-size: 3.1rem;
+	padding: 7.2px 0;
+}
+
+
+.btn-block {
+	display: block; 
+	width: 100%;
+}

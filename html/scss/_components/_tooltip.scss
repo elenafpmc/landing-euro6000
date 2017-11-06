@@ -1,0 +1,89 @@
+//Content tooltips
+
+.content-tooltip {
+	cursor: pointer; 
+	text-align: center; 
+	margin-bottom: 50px; 
+
+	&:hover {
+		img {
+			-webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
+    		filter: sepia(100%);
+		}
+	}
+
+	img {
+		margin-bottom: 30px; 
+	}
+
+	.award {
+		font-weight: bold; 
+		font-size: 1.65rem;
+		margin-bottom: 0; 
+		padding-bottom: 0; 
+	}
+
+	.award-small {
+		font-size: 1.16rem; 
+		font-weight: bold; 
+	}
+}
+
+
+// Styles content tooltip
+
+
+.tooltip >  {
+	.tooltip-inner {
+		background-color: $color-white;
+		color: $color-black-0;
+		padding: 36px 28px; 
+		border-radius: 15px; 
+		min-width: 420px; 
+		text-align: left; 
+		font-size: 1.7rem; 
+		font-family: $f-ubuntu;
+		font-weight: bold; 
+
+		small {
+			display: block; 
+			padding-top: 20px;
+			padding-bottom: 0; 
+			margin-bottom: 0;  
+		}
+
+	}
+}
+
+
+.tooltip {
+
+	width: 420px;
+	&.bs-tooltip-right {
+		.arrow {
+			left: -15px;
+
+			&:before {
+				border-width: 10px 20px 10px 0;
+				border-right-color: $color-white;
+			}
+		}
+	}
+
+	&.bs-tooltip-left {
+		.arrow {
+			right: -25px;
+
+			&:before {
+				border-width: 10px 0 10px 20px;
+				border-left-color: $color-white;
+			}
+		}
+	}
+
+	.arrow {
+		width: 10px; 
+		height: 10px; 
+	}
+}
+

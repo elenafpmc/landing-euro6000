@@ -1,0 +1,49 @@
+
+.home-page {
+    font-family: $f-ubuntu;
+    text-align: center;
+    color: $color-white;
+    background-image: url('../img/bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 76%;
+
+    .btn-participate {
+      font-size: 3rem;
+      padding: 13px 35px; 
+      margin-bottom: 40px; 
+      cursor: pointer; 
+    }
+
+    .title {
+      font-size: 2.5rem; 
+      font-weight: bold; 
+      margin-bottom: 50px; 
+    }
+
+    .subtitle {
+      margin-bottom: 45px; 
+      font-size: 2.2rem; 
+    }
+
+    .block-card {
+      margin-bottom: 80px; 
+      .subtitle {
+        margin-bottom: 20px; 
+        margin-right: 100px; 
+      }
+    }
+
+    .claim {
+      font-size: 4rem; 
+      text-align: center; 
+      font-weight: bold; 
+      margin-bottom: 650px; 
+    }
+
+
+}
+  
+
+
+ 

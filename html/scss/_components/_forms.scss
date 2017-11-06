@@ -47,3 +47,41 @@
 
 	display: none;
 }
+
+
+.checkbox{
+    input{
+      width: 17px;
+      height: 17px;
+      border: none;
+      background-color: $color-white;
+      display: inline-block;
+      color: $color-secondary;
+      -webkit-appearance: checkbox;
+      -moz-appearance: initial;
+    }
+
+    label{
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 5.7rem;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 1.4rem; 
+
+      }
+      a{
+        color: $color-secondary;
+      }
+    }
+
+  }
+
+
+.form-control {
+	display: block; 
+	width: 100%;
+	font-size: 2.5rem;
+	border: none; 
+	padding: 12px 20px;
+}

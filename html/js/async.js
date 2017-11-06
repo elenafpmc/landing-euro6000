@@ -6480,6 +6480,11 @@ $(window).load(function(){
 	$('.selectpicker').selectpicker();
 
 
+	// Inicialize tooltips
+	$('[data-toggle="tooltip"]').tooltip();
+
+	
+
 	$('#interior-porra-form').validate({
 		invalidHandler: function(event, validator) {
 

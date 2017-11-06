@@ -1,0 +1,103 @@
+@@include('./core/html-start.html', {
+    "class": "bet"
+  })
+	@@include('blocks/header.html')
+
+	<main class="wrapper home-page bet-page" role="main">
+
+        <section class="container">
+          <div class="row">
+            <div class="col-12 m-auto">
+              <button class="btn-primary btn-participate" data-toggle="modal" data-target="#modal-participate">¡PARTICIPO!</button>
+              <h1 class="title">¡Juega a la porra de la UEFA Champions League, acierta y podrás ganar fantásticos premios!</h1>
+              <h2 class="subtitle"> Consigue entradas para ver a tu equipo favorito, para la Final o Player Escort.</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-8 m-auto">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div role="button" class="content-tooltip" data-html="true" data-toggle="tooltip" data-placement="right" title="Si aciertas los resultados podrás ganar 1 entrada doble para la fina UEFA Champions League Final Kiev 2018, 1 entrada doble para ver a tu equipo favorito o 1 Player Escort. <br />Y solo por participar, entrarás en el sorteo de una televisión Sony. <small>*Entradas por cortesía de Mastercard® Patrocinador Oficial de la UEFA Champions League.</small>">
+                    <img src="img/award-01.png" alt="Premio 1" data-html="true">
+                    <p class="award">1 ENTRADA DOBLE PARA LA FINAL </p>
+                    <p class="small-award">UEFA Champions League Final Kiev 2018</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div role="button" class="content-tooltip" data-html="true" data-toggle="tooltip" data-placement="right" title="Si aciertas los resultados podrás ganar 1 entrada doble para la fina UEFA Champions League Final Kiev 2018, 1 entrada doble para ver a tu equipo favorito o 1 Player Escort. <br />Y solo por participar, entrarás en el sorteo de una televisión Sony. <small>*Entradas por cortesía de Mastercard® Patrocinador Oficial de la UEFA Champions League.</small>">
+                    <img src="img/award-01.png" alt="Premio 1" data-html="true">
+                    <p class="award">1 ENTRADA DOBLE</p>
+                    <p class="small-award">para ver a tu equipo favorito</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div role="button" class="content-tooltip tool-ri" data-html="true" data-toggle="tooltip" data-placement="left" title="Si aciertas los resultados podrás ganar 1 entrada doble para la fina UEFA Champions League Final Kiev 2018, 1 entrada doble para ver a tu equipo favorito o 1 Player Escort. <br />Y solo por participar, entrarás en el sorteo de una televisión Sony. <small>*Entradas por cortesía de Mastercard® Patrocinador Oficial de la UEFA Champions League.</small>">
+                    <img src="img/award-01.png" alt="Premio 1" data-html="true">
+                    <p class="award">1 PLAYER ESCORT </p>
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12">
+                    <p class="subtitle">¡Solo por participar, una televisión!</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 m-auto">
+                    <div role="button" class="content-tooltip" data-html="true" data-toggle="tooltip" data-placement="right" title="Si aciertas los resultados podrás ganar 1 entrada doble para la fina UEFA Champions League Final Kiev 2018, 1 entrada doble para ver a tu equipo favorito o 1 Player Escort. <br />Y solo por participar, entrarás en el sorteo de una televisión Sony. <small>*Entradas por cortesía de Mastercard® Patrocinador Oficial de la UEFA Champions League.</small>">
+                      <img src="img/award-01.png" alt="Premio 1" data-html="true">
+                      <p class="award">1 ENTRADA DOBLE PARA LA FINAL </p>
+                      <p class="small-award">UEFA Champions League Final Kiev 2018</p>
+                    </div>
+                  </div>
+              </div>
+              
+            </div>
+
+            
+          </div>
+
+          <div class="row justify-content-md-center">
+              <div class="col-md-10 d-md-flex align-items-end block-card">
+                  <p class="subtitle">Recuerda pagar con tu tarjeta EURO 6000 Maestro® o Mastercard®.</p>
+                  <img width="77" src="@@webRoot/img/cards.png" alt="tarjeta euro 600">
+              </div>
+          </div>
+
+          <p class="claim">Vive con más emoción que nunca las victorias de tu equipo</p>
+        </section>
+
+        <footer class="join">
+          <h2 class="h2--orange">
+            Descubre la lista de ganadores
+          </h2>
+          <div class="last-bets">
+              <p>
+                ¿Has participado en porras anteriores? <br>
+                Introduce tu email y comprueba tus apuestas.
+              </p>
+
+                <form class="form-inline d-md-flex justify-content-center">
+                  <input type="email" class="form-control" id="email" >
+                  <button type="submit" class="btn-primary join__btn">Consultar</button>
+                </form>
+
+              <p class="legal-text">
+                  Entradas por cortesía de Mastercard, Patrocinador Oficial de la UEFA Champions League. Sorteos de acuerdo con las condiciones y calendario descritos en las bases de la promoción. Promoción válida del 15/11/2017 al 01/05/2018 y exclusiva para personas físicas titulares de tarjeta EURO 6000 Maestro y/o Mastercard que sean suscriptores del Newsletter de Privilegios EURO 6000 y que hayan realizado al menos una operación de compra con una de las tarjetas anteriormente indicadas dentro de las fechas especificadas en las bases depositadas ante Notario y disponibles en <a href="#" title="Ir a: Euro 6000 Champions"> www.euro6000.com/champions </a>
+
+              </p>
+          </div>
+          
+        </footer>
+
+
+  </main>
+
+  @@include('modal/modal-participate.html')
+
+  @@include("core/plugins.js.html")
+
+@@include("core/html-end.html")
