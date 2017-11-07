@@ -9,6 +9,14 @@
           <div class="row">
             <div class="col-12 m-auto">
               <button class="btn-primary btn-participate" data-toggle="modal" data-target="#modal-participate">¡PARTICIPO!</button>
+              <div>
+                <button class="btn-primary btn-participate" data-toggle="modal" data-target="#modal-one-time">¡PARTICIPO!</button>
+                <button class="btn-primary btn-participate" data-toggle="modal" data-target="#modal-late">¡PARTICIPO!</button>
+                <button class="btn-primary btn-participate" data-toggle="modal" data-target="#modal-next-edition">¡PARTICIPO!</button>
+                <button class="btn-primary btn-participate" data-toggle="modal" data-target="#modal-no-confirmation">¡PARTICIPO!</button>
+                <button class="btn-primary btn-participate" data-toggle="modal" data-target="#modal-incomplete-subscription">¡PARTICIPO!</button>
+                <button class="btn-primary btn-participate" data-toggle="modal" data-target="#modal-no-subscription">¡PARTICIPO!</button>
+              </div>
               <h1 class="title">¡Juega a la porra de la UEFA Champions League, acierta y podrás ganar fantásticos premios!</h1>
               <h2 class="subtitle"> Consigue entradas para ver a tu equipo favorito, para la Final o Player Escort.</h2>
             </div>
@@ -82,7 +90,7 @@
 
                 <form class="form-inline d-md-flex justify-content-center">
                   <input type="email" class="form-control" id="email" >
-                  <button type="submit" class="btn-primary join__btn">Consultar</button>
+                  <button type="submit" class="btn-primary join__btn" data-toggle="modal" data-target="#modal-no-results">Consultar</button>
                 </form>
 
               <p class="legal-text">
@@ -97,6 +105,13 @@
   </main>
 
   @@include('modal/modal-participate.html')
+  @@include('modal/modal-no-results.html')
+  @@include('modal/modal-one-time.html')
+  @@include('modal/modal-late.html')
+  @@include('modal/modal-next-edition.html')
+  @@include('modal/modal-no-confirmation.html')
+  @@include('modal/modal-incomplete-subscription.html')
+  @@include('modal/modal-no-subscription.html')
 
   @@include("core/plugins.js.html")
 
