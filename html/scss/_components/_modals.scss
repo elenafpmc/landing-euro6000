@@ -13,10 +13,16 @@
 	font-size: 2rem;
 	p {
 		// font-size: 2.87rem;
+		@include media-breakpoint-down(sm) {
+			font-size: 1.6rem;
+		}
 		&.modal-title {
 			font-size: 2.9rem;
 			text-transform: uppercase;
 			padding-bottom: 30px;
+			@include media-breakpoint-down(sm)  {
+				font-size: 1.9rem;
+			}
 		}
 	}
 	.btn-primary {
@@ -25,6 +31,10 @@
 			padding-bottom: 7.2px;
 			font-size: 2.8rem; line-height: 4.65rem;
 			font-weight: bold;
+			@include media-breakpoint-down(sm) {
+				font-size: 1.6rem; line-height: 2rem;
+				padding: 15px;
+			}
 		}
 	}
 }

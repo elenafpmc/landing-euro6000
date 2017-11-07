@@ -67,8 +67,8 @@
       line-height: 5.7rem;
 
       @include media-breakpoint-down(sm) {
-        font-size: 1.4rem; 
-
+        font-size: 1.4rem; line-height: 2.2rem;
+        display: inline;
       }
       a{
         color: $color-secondary;
@@ -84,4 +84,7 @@
 	font-size: 2.5rem;
 	border: none; 
 	padding: 12px 20px;
+	@include media-breakpoint-down(sm) {
+		font-size: 1.4rem;
+	}
 }

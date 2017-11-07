@@ -4,7 +4,7 @@
 	cursor: pointer; 
 	text-align: center; 
 	margin-bottom: 50px; 
-
+	pointer-events: all;
 	&:hover {
 		img {
 			-webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
@@ -14,6 +14,7 @@
 
 	img {
 		margin-bottom: 30px; 
+		pointer-events: none;
 	}
 
 	.award {
@@ -21,11 +22,13 @@
 		font-size: 1.65rem;
 		margin-bottom: 0; 
 		padding-bottom: 0; 
+		pointer-events: none;
 	}
 
 	.small-award {
 		font-size: 1.16rem; 
 		font-weight: bold; 
+		pointer-events: none;
 	}
 }
 
@@ -44,7 +47,14 @@
 		font-size: 1.7rem; 
 		font-family: $f-ubuntu;
 		font-weight: bold; 
-
+		@include media-breakpoint-down(md) {
+			min-width: 300px;
+		}
+		@include media-breakpoint-down(sm) {
+			min-width: 150px;
+			padding: 10px;
+			font-size: 1.1rem; 
+		}
 		small {
 			display: block; 
 			padding-top: 20px;
@@ -59,6 +69,12 @@
 .tooltip {
 
 	width: 420px;
+	@include media-breakpoint-down(md) {
+		width: 300px;
+	}
+	@include media-breakpoint-down(sm) {
+		width: 150px;
+	}
 	&.bs-tooltip-right {
 		.arrow {
 			left: -15px;
