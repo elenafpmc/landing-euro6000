@@ -47,7 +47,12 @@
       }
     }
 
-
+    .row {
+      flex-wrap: nowrap;
+      @include media-breakpoint-down(xs) {
+        flex-wrap: wrap;
+      }
+    }
 }
   
 

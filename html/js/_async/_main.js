@@ -38,7 +38,7 @@ $(window).load(function(){
 
 				var bases = false;
 
-				 for(let erI in validator.errorList) {
+				 for(erI in validator.errorList) {
 
 				 	if ( $(validator.errorList[erI].element).is('select.selectpicker') ) {
 				 		$(validator.errorList[erI].element).closest('.bootstrap-select').find('.btn').addClass('error');
