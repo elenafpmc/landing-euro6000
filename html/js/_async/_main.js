@@ -31,33 +31,35 @@ $(window).load(function(){
 	$('[data-toggle="tooltip"]').tooltip();
 
 	
+	if ($('#interior-porra-form').length > 0 ) {
 
-	$('#interior-porra-form').validate({
-		invalidHandler: function(event, validator) {
+		$('#interior-porra-form').validate({
+			invalidHandler: function(event, validator) {
 
-			var bases = false;
+				var bases = false;
 
-			 for (error of validator.errorList ) {
+				 for(let erI in validator.errorList) {
 
-			 	if ( $(error.element).is('select.selectpicker') ) {
-			 		$(error.element).closest('.bootstrap-select').find('.btn').addClass('error');
-			 	}
-			 	if ( validator.errorList.length == 1 && $(error.element).is('#terms') ) {
-			 		$('.cnt-error.bases').show();
-			 		$('.cnt-error.require').hide();
-			 		bases = true;
-			 	} else {
-			 		$('.cnt-error.bases').hide();
-			 		bases = false;
-			 	}
-			 }
+				 	if ( $(validator.errorList[erI].element).is('select.selectpicker') ) {
+				 		$(validator.errorList[erI].element).closest('.bootstrap-select').find('.btn').addClass('error');
+				 	}
+				 	if ( validator.errorList.length == 1 && $(validator.errorList[erI].element).is('#terms') ) {
+				 		$('.cnt-error.bases').show();
+				 		$('.cnt-error.require').hide();
+				 		bases = true;
+				 	} else {
+				 		$('.cnt-error.bases').hide();
+				 		bases = false;
+				 	}
+				 }
 
-			 if ( validator.errorList.length > 0 && bases == false ) {
-			 	$('.cnt-error.require').show();
-			 	$('.cnt-error.bases').hide();
-			 }
-		}
-	});
+				 if ( validator.errorList.length > 0 && bases == false ) {
+				 	$('.cnt-error.require').show();
+				 	$('.cnt-error.bases').hide();
+				 }
+			}
+		});
+	}
 	  
 	//Ejecutamos Masonry
 	// $('.js-masonry').masonry({
@@ -117,7 +119,7 @@ $(window).load(function(){
 	// 	});	
 	// });	
 	
-})	
+});
 
 
 svg4everybody();
