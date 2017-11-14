@@ -133,7 +133,7 @@
 	          // Print 'em
 	          print("
 	          <tr class='$class'>
-	            <td data-title='Nombre'><a href='./$namehref'>$name</a></td>
+	            <td data-title='Nombre'><a href='./$namehref' target='_blank'>$name</a></td>
 	          </tr>");
 	          }
 	        }

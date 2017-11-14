@@ -12,7 +12,7 @@
 	// padding: 60px 70px;
 	font-size: 2rem;
 	p {
-		// font-size: 2.87rem;
+		font-size: 2.5rem;
 		@include media-breakpoint-down(sm) {
 			font-size: 1.6rem;
 		}
@@ -29,7 +29,7 @@
 		&.sm {
 			padding-top: 7.2px;
 			padding-bottom: 7.2px;
-			font-size: 2.8rem; line-height: 4.65rem;
+			font-size: 3rem; line-height: 4.65rem;
 			font-weight: bold;
 			@include media-breakpoint-down(sm) {
 				font-size: 1.6rem; line-height: 2rem;

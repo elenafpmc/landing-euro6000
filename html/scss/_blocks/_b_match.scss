@@ -11,6 +11,9 @@
         display: block;
         width: 100%;
         text-transform: uppercase;
+        .forecast &{
+            font-size: 3.48rem;
+        }
     }
     input{
         min-width: 80px;
@@ -20,7 +23,7 @@
         border: none;
         outline: none;
         padding: 10px;
-        font-size: 5rem;
+        font-size: 5.2rem;
         text-align: center;
         margin: 0 15px;
         color: $color-black-0; 

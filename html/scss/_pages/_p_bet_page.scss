@@ -1,114 +1,115 @@
 
 .bet-page {
-    font-family: $f-ubuntu;
-    text-align: center;
-    color: $color-white;
-    background-image: url('../img/bg.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
+  font-family: $f-ubuntu;
+  text-align: center;
+  color: $color-white;
+  background-image: url('../img/bg.jpg');
+  background-size: 210%;
+  background-repeat: no-repeat;
+  background-position: bottom 50px center;
 
-    &__top {
-        margin-bottom: 45px;
-        .title {
-            display: inline-block;
-            font-size: 4.3rem;
-            font-weight: bold;
-
-             @include media-breakpoint-down(sm) {
-              font-size: 3rem; 
-              line-height: 3.8rem;
-              margin-bottom: 15px; 
-            }
-        }
-        .lead {
-            font-size: 2.5rem;
-            font-weight: 500;
-            text-align: left;
-
-             @include media-breakpoint-down(sm) {
-              font-size: 1.9rem;
-             }
-        }
-    }
-
-
-    &__main-content {
-        padding: 50px 65px 80px;
-        margin-bottom: 70px;
-
-        @include media-breakpoint-down(md) {
-          padding: 35px;
-          margin-bottom: 20px; 
-        }
-
-         @include media-breakpoint-down(sm) {
-          border: none; 
-         }
-        .title {
-            display: inline-block;
-            font-size: 4.9rem;
-            line-height: 5.4rem;
-            font-weight: bold;
+  &__top {
+      margin-bottom: 45px;
+      .title {
+          display: inline-block;
+          font-size: 4.3rem;
+          font-weight: bold;
 
             @include media-breakpoint-down(sm) {
-              font-size: 3.9rem;
-              line-height: 4.9rem;
-            }
-
-
-        }
-
-        .subtitle {
-            display: inline-block;
-            font-size: 3.8rem;
-            line-height: 5.7rem;
-            font-weight: 500;
-            margin-bottom: 30px; 
+            font-size: 3rem; 
+            line-height: 3.8rem;
+            margin-bottom: 15px; 
+          }
+      }
+      .lead {
+          font-size: 2.5rem;
+          font-weight: 500;
+          text-align: left;
 
             @include media-breakpoint-down(sm) {
-              font-size: 2.8rem;
-              line-height: 3.5rem;
+            font-size: 1.9rem;
             }
-        }
-        .bg-grey {
-            padding: 60px 55px 75px;
+      }
+  }
 
-            @include media-breakpoint-down(md) { 
-              padding: 30px;
-            }
 
-            @include media-breakpoint-down(sm) { 
-              padding: 15px;
-            }
-        }
-    }
+  &__main-content {
+      padding: 50px 65px 80px;
+      margin-bottom: 70px;
 
-    .h3{
-        font-size: 3.4rem;
-        line-height: 4.7rem;
-        font-weight: bold;
-        span {
-            color: $color-primary;
-        }
-
-        @include media-breakpoint-down(md) { 
-          font-size: 2.4rem; 
-          line-height: 3.7rem; 
-        }
+      @include media-breakpoint-down(md) {
+        padding: 35px;
+        margin-bottom: 20px; 
+      }
 
         @include media-breakpoint-down(sm) {
-          font-size: 2.4rem; 
-          line-height: 3.2rem; 
-          margin-bottom: 3rem;
+        border: none; 
         }
-    }
+      .title {
+          display: inline-block;
+          font-size: 4.9rem;
+          line-height: 5.4rem;
+          font-weight: bold;
 
-    .small-text{
-        font-weight: 100;
-        font-size: 1.2rem;
-        text-align: left;
-    }
+          @include media-breakpoint-down(sm) {
+            font-size: 3.9rem;
+            line-height: 4.9rem;
+          }
+
+
+      }
+
+      .subtitle {
+          display: inline-block;
+          font-size: 3.8rem;
+          line-height: 5.7rem;
+          font-weight: 500;
+          margin-bottom: 30px; 
+
+          @include media-breakpoint-down(sm) {
+            font-size: 2.8rem;
+            line-height: 3.5rem;
+          }
+      }
+      .bg-grey {
+          padding: 60px 55px 75px;
+
+          @include media-breakpoint-down(md) { 
+            padding: 30px;
+          }
+
+          @include media-breakpoint-down(sm) { 
+            padding: 15px;
+          }
+      }
+  }
+
+  .h3{
+      font-size: 3.4rem;
+      line-height: 4.7rem;
+      font-weight: bold;
+      span {
+          color: $color-primary;
+      }
+
+      @include media-breakpoint-down(md) { 
+        font-size: 2.4rem; 
+        line-height: 3.7rem; 
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 2.4rem; 
+        line-height: 3.2rem; 
+        margin-bottom: 3rem;
+      }
+  }
+
+  .small-text{
+      font-weight: 100;
+      font-size: 1.2rem;
+      text-align: left;
+      margin-bottom: 40px;
+  }
 
   .selectpicker-cnt{
     margin-bottom: 75px;
@@ -129,6 +130,18 @@
       line-height: 2.8rem;
     }
   }
+
+  .checkbox{
+    margin-bottom: 20px;
+    label{
+      font-size: 1.6rem;
+      a{
+        text-decoration: underline;
+      }
+    }
+
+  }
+  
 
   
   .submit{
@@ -265,7 +278,8 @@
   border: none;
   border-radius: none;
   &:hover{
-
+    background-color: $color-btn-hover;
+    transition: background-color .2s ease-in;
   }
   &:focus{
     outline: none;
